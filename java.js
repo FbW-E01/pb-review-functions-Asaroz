@@ -36,7 +36,7 @@ const type_of = (array)=>typeof(array[0])
 
 const myarray=[1,2,3,4,5,"Haus"]
 const myarray2=[1,2,3,4,5,6]
-// const is_type = (currentValue) => typeof(currentValue) === typeof(myarray[0]);
+// const is_type = (currentValue,index,array) => typeof(currentValue) === typeof(myarray[0]);
 // const type_check = (array)=>array.every(is_type)
 const type_check = (array)=>array.every((currentValue) => typeof(currentValue) === typeof(array[0]))
 console.log(type_check(myarray))
@@ -45,7 +45,7 @@ console.log(type_check(myarray2))
 // 8. Print the `type` of a variable that has a normal function value.
 console.log(typeof(last_item))
 // 9. Print the `type` of a variable that has an arrow function value.
-console.log(type_of(type_check))
+console.log(typeof(type_check))
 // 10. Write and test a function that takes in two parameters (min and max). That function should return another function that doesn't take in any parameters, 
 // but returns a random number between min and max. Effectively your "outer" function is a factory that creates customized random number generator functions.
 
