@@ -70,4 +70,4 @@ console.log(generator())
 
 // 12. In your own words, explain what is the difference between functions and methods.
 
-//methods are functions inside classes
+//methods are functions inside classes and objects
