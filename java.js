@@ -35,10 +35,10 @@ const type_of = (array)=>typeof(array[0])
 // 7. Write an arrow function that takes in an array and *returns* true, if all items in that array have the same type.
 
 const myarray=[1,2,3,4,5,"Haus"]
-
 const myarray2=[1,2,3,4,5,6]
-const is_type = (currentValue) => typeof(currentValue) === typeof(myarray[0]);
-const type_check = (array)=>array.every(is_type)
+// const is_type = (currentValue) => typeof(currentValue) === typeof(myarray[0]);
+// const type_check = (array)=>array.every(is_type)
+const type_check = (array)=>array.every((currentValue) => typeof(currentValue) === typeof(array[0]))
 console.log(type_check(myarray))
 console.log(type_check(myarray2))
 
